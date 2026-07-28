@@ -77,7 +77,7 @@
         <button class="absolute top-1/2 -translate-y-1/2 px-[26px] py-[14px] border-0 rounded-full font-karla font-bold text-base cursor-pointer shadow-[0_6px_16px_rgba(58,43,34,0.18)] transition-[left,top] duration-[280ms] [transition-timing-function:cubic-bezier(.34,1.56,.64,1)] left-[calc(50%-130px)] max-[420px]:left-[calc(50%-110px)] bg-sage text-paper" id="yesBtn" type="button">oui</button>
         <button class="absolute top-1/2 -translate-y-1/2 px-[26px] py-[14px] border-0 rounded-full font-karla font-bold text-base cursor-pointer shadow-[0_6px_16px_rgba(58,43,34,0.18)] transition-[left,top] duration-[280ms] [transition-timing-function:cubic-bezier(.34,1.56,.64,1)] left-[calc(50%+20px)] max-[420px]:left-[calc(50%+10px)] bg-paper text-umber-soft border-[1.5px] border-[#E3D2AE]" id="noBtn" type="button">non</button>
       </div>
-      <p class="mt-[18px] text-[12.5px] text-umber-soft opacity-75" id="askHint">le chat compte sur toi 🐾</p>
+      <p class="mt-[18px] text-[12.5px] text-umber-soft opacity-75" id="askHint">la chatte compte sur toi grr</p>
     </div>
   </section>
 
@@ -173,7 +173,7 @@
         </div>
       </article>
 
-      <article class="tl-item group relative w-1/2 max-[680px]:w-full box-border px-[34px] max-[680px]:pr-5 pb-14 max-[680px]:pb-11 opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[600ms] ease-in-out [&.is-visible]:opacity-100 [&.is-visible]:translate-y-0 odd:mr-auto odd:text-right even:ml-auto even:text-left max-[680px]:!text-left" data-label="Yann">
+      <article class="tl-item group relative w-1/2 max-[680px]:w-full box-border px-[34px] max-[680px]:pr-5 pb-14 max-[680px]:pb-11 opacity-0 translate-y-[26px] transition-[opacity,transform] duration-[600ms] ease-in-out [&.is-visible]:opacity-100 [&.is-visible]:translate-y-0 odd:mr-auto odd:text-right even:ml-auto even:text-left max-[680px]:!text-left" data-label="La bombasse">
         <div class="absolute top-[10px] w-4 h-4 rounded-full bg-marigold border-[3px] border-paper shadow-[0_2px_6px_rgba(58,43,34,0.25)] group-odd:right-[-8px] group-even:left-[-8px] max-[680px]:!left-[-8px] max-[680px]:!right-auto" aria-hidden="true"></div>
         <div class="block max-w-full text-left bg-paper rounded-[18px] px-4 pt-4 pb-5 shadow-[0_3px_0_rgba(58,43,34,0.06),0_8px_20px_rgba(58,43,34,0.05)]">
           <div class="w-full aspect-[4/3] rounded-xl overflow-hidden mb-[14px] bg-cream-deep"><img class="w-full h-full object-cover block" src="assets/ami-7.jpg" alt="Yann-Philippe"></div>
@@ -283,7 +283,7 @@
   function dodge(e) {
     e.preventDefault();
     moveButtonRandom(noBtn);
-    askHint.textContent = "essaie encore… le chat n'a pas fini d'attendre 🐾";
+    askHint.textContent = "try again b chat la n'a pas fini d'attendre";
   }
   noBtn.addEventListener('mouseenter', dodge);
   noBtn.addEventListener('click', dodge);
@@ -310,8 +310,8 @@
     if (!yesTeasedOnce) {
       yesTeasedOnce = true;
       moveButtonRandom(yesBtn);
-      yesBtn.textContent = 'oui (pour de vrai)';
-      askHint.textContent = "cette fois c'est la bonne 👀";
+      yesBtn.textContent = 'oui (vrai vrai la)';
+      askHint.textContent = "bon c'est bon pour cette fois ";
       return;
     }
     unlockContent();
